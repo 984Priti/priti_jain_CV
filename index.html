@@ -1,0 +1,353 @@
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Priti Jain</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!-- Optional: You might want to adjust main2.css or yogi_style.css if they contain specific styling you don't need -->
+		<!-- <link rel="stylesheet" href="assets/css/main2.css" /> -->
+		<!-- <link rel="stylesheet" type="text/css" href="assets/css/yogi_style.css"> -->
+		<style>
+			/* Simple style to make bullet points clearer in experience */
+			#two ul { list-style: disc; padding-left: 20px; margin-bottom: 1em; }
+			#two li { margin-bottom: 0.5em; }
+			#three ul { list-style: disc; padding-left: 20px; margin-bottom: 1em; }
+            #three li { margin-bottom: 0.5em; }
+            #languages ul { list-style: none; padding-left: 0; }
+            #interests p { margin-bottom: 1em; }
+            #six_fix { margin-bottom: 0.2em !important; font-weight: normal !important; font-size: 1em !important; }
+            #six_fix2 { margin-bottom: 1em !important; font-size: 0.9em !important; color: #888; font-style: italic;}
+            .course-columns { display: flex; justify-content: space-between; }
+            .course-columns ul { list-style: disc; padding-left: 20px; margin: 0; flex-basis: 30%; /* Adjust as needed */ }
+
+            /* Timeline Styles */
+            .timeline {
+                position: relative;
+                margin: 2em 0;
+                padding-left: 50px; /* Space for the line */
+                list-style: none;
+            }
+            .timeline::before {
+                content: '';
+                position: absolute;
+                left: 20px; /* Adjust based on dot size */
+                top: 0;
+                bottom: 0;
+                width: 4px;
+                background: #ddd; /* Line color */
+            }
+            .timeline-item {
+                position: relative;
+                margin-bottom: 2em;
+            }
+            .timeline-item::before { /* The dot */
+                content: '';
+                position: absolute;
+                left: -38px; /* -(padding-left - line-left - dot-width/2) = -(50 - 20 - 10/2) = -35 approx */
+                top: 5px; /* Adjust vertical alignment */
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background: #555; /* Dot color */
+                border: 2px solid #ddd; /* Optional border */
+            }
+            .timeline-date {
+                position: absolute;
+                left: -150px; /* Adjust as needed to position dates */
+                top: 0px; /* Align with dot/content */
+                width: 100px; /* Fixed width for dates */
+                text-align: right;
+                font-weight: bold;
+                color: #555;
+            }
+            .timeline-content {
+                padding-left: 15px; /* Space between line and content */
+            }
+            .timeline-content h4 {
+                margin-top: 0;
+                margin-bottom: 0.2em;
+            }
+             .timeline-content p {
+                margin-bottom: 0.5em;
+                font-size: 0.9em;
+                color: #666;
+            }
+             .timeline-content ul {
+                margin-top: 0.5em;
+             }
+             /* Responsive adjustments for smaller screens */
+             @media screen and (max-width: 736px) {
+                .timeline {
+                    padding-left: 20px; /* Reduce padding */
+                }
+                .timeline::before {
+                    left: 10px; /* Move line closer */
+                }
+                .timeline-item::before {
+                    left: -18px; /* Adjust dot position */
+                     top: 0px;
+                }
+                .timeline-date {
+                    position: static; /* Stack date above content */
+                    width: auto;
+                    text-align: left;
+                    margin-bottom: 0.5em;
+                    left: 0;
+                }
+                .timeline-content {
+                    padding-left: 10px; /* Adjust content padding */
+                }
+            }
+
+
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<!-- TODO: Replace 'images/priti_jain_placeholder.jpg' with the actual path to your photo -->
+					<span class="image avatar"><img src="images/priti_jain.jpg" alt="Priti Jain" /></span>
+					<h1 id="logo"><a href="#">Priti Jain</a></h1>
+					<p>Chartered Accountant</p>
+				</header>
+				<nav id="nav">
+					<ul>
+						<li><a href="#one" class="active">About</a></li>
+						<li><a href="#six">Education</a></li>
+						<li><a href="#two">Experience</a></li>
+						<li><a href="#three">Certifications & Training</a></li>
+						<li><a href="#five">Skills</a></li>
+                        <li><a href="#languages">Languages</a></li>
+                        <li><a href="#interests">Interests</a></li>
+						<!-- TODO: Replace 'priti_jain_CV.pdf' with the actual filename of your CV -->
+						<li><a target="_blank" class="nav-link js-scroll-trigger" href="priti_jain_CV.pdf">CV</a></li>
+
+					</ul>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<!-- TODO: Replace '#' with your actual LinkedIn profile URL -->
+						<li><a target="_blank" href="https://linkedin.com/in/jainpritil" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+						<!-- TODO: Replace '#' with your actual email address -->
+						<li><a target="_blank" href="mailto:jainpriti0895@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						<!-- Add other relevant social links if needed -->
+					</ul>
+				</footer>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One: About -->
+							<section id="one">
+								<div class="container">
+									<header class="major">
+										<h3>About Me</h3>
+									</header>
+									<p>I am a Chartered Accountant (CA) with extensive experience in financial analysis, investment evaluation, credit management, and financial reporting. Over the years, I have enhanced organizational value through meticulous financial oversight and strategic investment initiatives. My expertise lies in preparing and consolidating financial statements compliant with Ind AS and IFRS, leading external audit processes, coordinating with tax consultants, and implementing robust Internal Financial Controls.</p>
+                                    <p>Adept at managing tax audits and optimizing financial performance through effective tax computations. Proven ability in assessing creditworthiness, negotiating loan terms, ensuring regulatory compliance, and managing large-ticket portfolios in wholesale credit environments. Skilled in internal and statutory audits, final accounts preparation, and detailed tax computations across diverse client bases.</p>
+									<p>Proficient in MS Office Suite, Tally, SAP, QuickBooks, and Financial Modeling Tools, with strong analytical skills in financial analysis, risk assessment, strategic planning, and compliance management.</p>
+                                    <p><b>Objective:</b> I am actively seeking opportunities in asset management, financial analysis, and financial modeling in Sweden. I am eager to contribute my expertise to organizations looking to enhance their financial strategies and operations, leveraging my international experience and commitment to excellence.</p>
+								</div>
+							</section>
+
+							<!-- Six: Education -->
+							<section id="six">
+								<div class="container">
+									<h3>Education</h3>
+ 									<h4> The Institute of Chartered Accountants of India (ICAI) </h4>
+ 									<p id="six_fix"> Chartered Accountant (CA) </p>
+                                    <!-- Optional: Add completion year if available -->
+ 									<p id="six_fix2"> Mumbai, India </p>
+
+
+ 									<h4> University of Mumbai </h4>
+ 									<p id="six_fix"> Bachelor of Commerce (B.Com), Business/Commerce, General </p>
+ 									<p id="six_fix2"> June 2013 - March 2016 | Mumbai, India </p>
+
+								</div>
+							</section>
+
+						<!-- Two: Experience (Replaced Research) -->
+							<section id="two">
+								<div class="container">
+									<h3>Professional Experience</h3>
+
+                                    <div class="timeline">
+                                        <div class="timeline-item">
+                                            <div class="timeline-date">May 2023 - Present</div>
+                                            <div class="timeline-content">
+                                                <h4>Manager (Accounts and Finance)</h4>
+                                                <p><strong>Jewelex India Pvt. Ltd.</strong> | Mumbai, India</p>
+                                                <ul>
+                                                    <li>Prepared and consolidated financial statements in compliance with Ind AS and IFRS, ensuring accuracy and regulatory adherence.</li>
+                                                    <li>Led external audit processes, coordinated with tax consultants, and successfully finalized tax audits within deadlines.</li>
+                                                    <li>Implemented robust Internal Financial Controls and managed tax computations to optimize financial performance.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="timeline-item">
+                                            <div class="timeline-date">Sep 2022 - May 2023</div>
+                                            <div class="timeline-content">
+                                                <h4>Credit Manager (Wholesale Credit)</h4>
+                                                <p><strong>HDFC Bank</strong> | Mumbai, India</p>
+                                                <ul>
+                                                    <li>Conducted comprehensive assessments of corporate clients’ creditworthiness by analyzing CIBIL scores, payment histories, and borrowing capacities, facilitating informed lending decisions.</li>
+                                                    <li>Performed in-depth fundamental analysis using key financial ratios (net profit margins, operating margins, debt-to-equity, current ratios) to evaluate profitability, leverage, and liquidity.</li>
+                                                    <li>Negotiated favorable loan terms, monitored repayment schedules, and ensured strict compliance with banking regulations.</li>
+                                                    <li>Identified and mitigated potential credit risks in high-value transactions, aligning lending decisions with the bank’s risk appetite and policies.</li>
+                                                    <li>Oversaw a large-ticket portfolio within the ECG segment, maintaining asset quality and ensuring compliance with credit policies and regulatory requirements.</li>
+                                                    <li>Prepared comprehensive internal review reports to mitigate financial risks.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="timeline-item">
+                                            <div class="timeline-date">Jan 2021 - Jul 2022</div>
+                                            <div class="timeline-content">
+                                                <h4>Associate (Accountant and Tax Focus)</h4>
+                                                <p><strong>Precision Engineering Works</strong> | Mumbai, India</p>
+                                                <ul>
+                                                    <li>Conducted internal and statutory audits, ensuring full compliance with accounting standards and regulatory requirements.</li>
+                                                    <li>Prepared final accounts, tax audit reports, and detailed tax computations for a diverse client base.</li>
+                                                    <li>Reviewed and verified financial statements for adherence to TDS, ESI/PF regulations, enhancing financial accuracy.</li>
+                                                    <li>Secured new clients, contributing significantly to business growth by developing and implementing client attraction/retention strategies.</li>
+                                                    <li>Engaged with customers to execute project requirements, managed client communications, and ensured high levels of client satisfaction.</li>
+                                                    <li>Prepared and maintained accurate books of accounts; managed taxation and GST compliance.</li>
+                                                    <li>Provided financial advice on optimal fund utilization; assisted in financial planning and budgeting.</li>
+                                                    <li>Key Achievements: Expanded client base, streamlined accounting processes, implemented strategies for cost savings and profitability, turning the company profitable.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="timeline-item">
+                                            <div class="timeline-date">Feb 2017 - Sep 2018</div>
+                                            <div class="timeline-content">
+                                                <h4>Article Trainee</h4>
+                                                <p><strong>MNRD & Associates</strong> | Mumbai, India</p>
+                                                <ul>
+                                                    <li>Managed accounting records for proprietorship and partnership entities; prepared financial statements.</li>
+                                                    <li>Prepared and filed income tax returns for individuals, firms, and private limited companies; advised on tax planning.</li>
+                                                    <li>Conducted tax audits ensuring compliance; managed transfer pricing documentation.</li>
+                                                    <li>Managed preparation and filing of monthly, quarterly, and annual GST returns.</li>
+                                                    <li>Key Achievements: Reduced client tax liabilities, enhanced accounting accuracy (20% error decrease), improved client understanding of tax regulations.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="timeline-item">
+                                            <div class="timeline-date">Aug 2015 - Jan 2017</div>
+                                            <div class="timeline-content">
+                                                <h4>Article Trainee</h4>
+                                                <p><strong>RAMA Group</strong> | Mumbai, India</p>
+                                                <ul>
+                                                    <li>Conducted internal audits at client locations including Purchase, Sales, Expense, Prepayment, and Property audits.</li>
+                                                    <li>Evaluated procurement processes for policy compliance and cost-saving opportunities.</li>
+                                                    <li>Analyzed sales transactions and revenue recognition for accuracy.</li>
+                                                    <li>Reviewed expenses to detect discrepancies and prevent fraud.</li>
+                                                    <li>Examined prepayment accounts for proper allocation.</li>
+                                                    <li>Verified existence and valuation of client assets.</li>
+                                                    <li>Managed financial data analysis, prepared reports, and collaborated with client teams to enhance accounting practices.</li>
+                                                    <li>Provided recommendations improving financial controls and reducing risks.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end timeline -->
+
+								</div>
+							</section>
+
+						<!-- Three: Certifications & Training (Replaced Publications) -->
+							<section id="three">
+								<div class="container">
+									<h3>Certifications & Training</h3>
+                                    <ul>
+                                        <li>Certificate in Financial Capital Markets (Zerodha Varsity)</li>
+                                        <li>Financial Modelling Workshop (Skill Nation)</li>
+                                        <li>Investment Banking Capstone Project (CA Monk)</li>
+                                    </ul>
+								</div>
+							</section>
+
+						<!-- Five: Skills -->
+						<section class="box special features" id="five">
+							<div class="container" align="left">
+                                <h3 align="center">Skills</h3>
+							</div>
+							<div class="features-row" align="center">
+								<section>
+									<h4>Technical Skills</h4>
+									<p> Financial Reporting (Ind AS, IFRS), Tax Audits, Credit Analysis, Investment Banking Concepts, Internal Financial Controls, Consolidated Financial Statements, Statutory Audit, Final Accounts Preparation, Tax Computation, GST Compliance, TDS/ESI/PF Regulations.</p>
+								</section>
+								<section>
+									<h4>Software Proficiency</h4>
+									<p> MS Office Suite (Excel, Word, PowerPoint), Tally, SAP, QuickBooks, Financial Modeling Tools.</p>
+								</section>
+							</div>
+							<div class="features-row" align="center">
+								<section>
+ 									<h4>Analytical & Strategic Skills</h4>
+									<p>Financial Analysis, Risk Assessment, Strategic Planning, Compliance Management, Credit Evaluation, Portfolio Management, Business Development.</p>
+								</section>
+								<section>
+									<h4>Soft Skills</h4>
+									<p>Problem Solving, Attention to Detail, Client Communication, Negotiation, Teamwork, Adaptability, Meticulous Oversight.</p>
+								</section>
+							</div>
+						</section>
+
+                        <!-- Languages -->
+                        <section id="languages">
+                            <div class="container">
+                                <h3>Languages</h3>
+                                <ul>
+                                    <li><strong>Proficient in:</strong> English, Hindi, Marathi, Gujarati, Marwari</li>
+                                </ul>
+                            </div>
+                        </section>
+
+                        <!-- Interests -->
+                        <section id="interests">
+                            <div class="container">
+                                <h3>Interests</h3>
+                                <p>In my leisure time, I enjoy immersing myself in books, expressing creativity through singing and dancing, and exploring new places through travel.</p>
+                            </div>
+                        </section>
+
+                        <!-- Removed Relevant Courses Section -->
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>© Priti Jain 2025. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
